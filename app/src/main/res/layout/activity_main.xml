@@ -5,32 +5,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context="com.example.happyviewing.MainActivity">
+<!--
+7-9 Set the background xml element to black
+-->
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:text="Happy Birthday!"
         android:background="#E54AFF"
+        android:layout_width="150dp"
+        android:layout_height="500dp"
+        android:padding="40dp"
     />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Worlddddddd!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-</RelativeLayout>
-
 <!--
 ConstraintLayouts use app:layout_constraintBottom_toBottomOf
 It seems like these allow pinpoint positioning of Views
 I'll stick to RelativeLayouts for the time being as I follow the udacity examples
 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Worlddddddd!"
+ />
+
+
+
+</RelativeLayout>
+
