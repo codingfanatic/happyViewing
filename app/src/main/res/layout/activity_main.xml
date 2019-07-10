@@ -13,6 +13,9 @@ I'll stick to RelativeLayouts for the time being as I follow the udacity example
 **
 layout_width="match_parent" sets the width to that of the parent
 layout_height="wrap content" wraps the view around its conents
+android:layout_centerHorizontal="true" centers a view within its parent (kufufu)
+-This can be used to center the title and options as well
+
 -->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,16 +28,18 @@ layout_height="wrap content" wraps the view around its conents
 
     <TextView
         android:text="Happy Birthday!"
-        android:background="#E54AFF"
-        android:layout_width="match_parent"
+        android:background="#333300"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="40dp"
+        android:layout_centerHorizontal="true"
     />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello Worlddddddd!"
+
  />
 
 
