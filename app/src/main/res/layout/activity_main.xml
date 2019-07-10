@@ -9,15 +9,16 @@ It seems like these allow pinpoint positioning of Views
 I'll stick to RelativeLayouts for the time being as I follow the udacity examples
 
 7-10
-
+Updated to LinearLayout instead.
 **
 layout_width="match_parent" sets the width to that of the parent
-layout_height="wrap content" wraps the view around its conents
+layout_height="wrap content" wraps the view around its contents
 android:layout_centerHorizontal="true" centers a view within its parent (kufufu)
 -This can be used to center the title and options as well
+LinearLayout aligns Views horizontally or vertically
 
 -->
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -28,21 +29,21 @@ android:layout_centerHorizontal="true" centers a view within its parent (kufufu)
 
     <TextView
         android:text="Happy Birthday!"
-        android:background="#333300"
+        android:background="#999900"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="40dp"
-        android:layout_centerHorizontal="true"
     />
 
     <TextView
+        android:text="0000000000000000000000000"
+        android:background="#333333"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Worlddddddd!"
-
- />
-
+        android:padding="40dp"
+    />
 
 
-</RelativeLayout>
+
+</LinearLayout>
 
